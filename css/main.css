@@ -1,0 +1,482 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?7222751");
+  src: url("../fonts/fontello.eot?7222751#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?7222751") format("woff2"), url("../fonts/fontello.woff?7222751") format("woff"), url("../fonts/fontello.ttf?7222751") format("truetype"), url("../fonts/fontello.svg?7222751#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?7222751#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter-bird-1:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-skype-1:before {
+  content: '\f17e';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\f300';
+}
+
+/* '' */
+.icon-linkedin:before {
+  content: '\f31a';
+}
+
+/* '' */
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.header {
+  background: url(../img/header/fonheader.png) no-repeat center top/cover;
+  padding-top: 43px;
+  padding-bottom: 326px;
+}
+.header p {
+  color: #11749e;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 51.19px;
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  text-align: center;
+}
+
+.top-nav {
+  padding-left: 100px;
+}
+.top-nav_menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.top-nav_menu li:last-child {
+  margin-right: 0;
+}
+.top-nav_menu li {
+  margin-right: 42px;
+}
+.top-nav_menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Myriad Pro";
+}
+.top-nav_menu li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-color: #11749e;
+  transform: translateY(35px) scale(0);
+  transition: all 0.2s;
+}
+.top-nav_menu li a:hover::after {
+  transform: translateY(35px) scale(1);
+}
+.top-nav_social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.top-nav_social-links li:last-child {
+  margin-right: 0;
+}
+.top-nav_social-links li {
+  margin-right: 22px;
+}
+.top-nav_social-links li a {
+  display: inline-block;
+  color: #f5f5f5;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1 {
+  color: #fff;
+  font-size: 153px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 272px;
+}
+
+.awesome-agency {
+  background: url(../img/awesome-agency/FonAgency.png) no-repeat center top/cover;
+  padding-top: 100px;
+  padding-bottom: 126px;
+}
+
+.letter {
+  background: url(../img/awesome-agency/letterW.png) no-repeat;
+  margin: 0 auto;
+  width: 185px;
+  height: 176px;
+  z-index: 1;
+  position: relative;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45.06px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  transform: translate(53%, -260%);
+}
+
+.items {
+  padding-top: 68px;
+  color: #ffffff;
+  text-align: center;
+}
+.items p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 25px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 22px;
+}
+
+.new-first {
+  background: url(../img/news-area/new-first.jpg) no-repeat center top/cover;
+  padding-top: 81px;
+  padding-bottom: 73px;
+}
+
+.new-second {
+  background: url(../img/news-area/new-second.jpg) no-repeat center top/cover;
+  padding-bottom: 474px;
+}
+.new-second .blog {
+  color: #222;
+  position: absolute;
+  z-index: 2;
+  transform: translate(140%, 12%);
+}
+
+h3 {
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.blog {
+  width: 472px;
+  color: #fff;
+}
+.blog p:first-child {
+  font-size: 13px;
+}
+.blog p:last-child {
+  padding-top: 30px;
+}
+.blog p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 38px;
+}
+
+.lets-blog {
+  padding-top: 92px;
+  margin-bottom: 73px;
+}
+.lets-blog .letter {
+  background: url(../img/lets-blog/letterB.png) no-repeat;
+}
+.lets-blog h2 {
+  color: #222;
+  transform: translate(206%, -242%);
+}
+.lets-blog p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  padding-top: 84px;
+}
+
+.blogs {
+  padding-top: 76px;
+  text-align: center;
+}
+.blogs h4 {
+  color: #11749e;
+}
+.blogs p {
+  padding-top: 26px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.quick-action-area {
+  background: url(../img/quick-action-area/quick-action-fon.png) no-repeat center top/cover;
+  padding-top: 108px;
+  padding-bottom: 156px;
+}
+
+.quick-actions {
+  display: flex;
+}
+.quick-actions p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.key-feature-area {
+  background: url(../img/fon6.jpg) no-repeat center top/cover;
+  color: #fff;
+  margin-bottom: 64px;
+}
+
+.key-features {
+  display: flex;
+}
+
+.key-feature h3 {
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 222px;
+  padding-bottom: 34px;
+}
+
+.key-feature {
+  font-size: 15px;
+  font-weight: 300;
+  width: 470px;
+  padding-bottom: 64px;
+}
+
+.feature {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  background: #11749e;
+  padding: 12px;
+}
+
+.one {
+  width: 372px;
+}
+
+.two {
+  width: 400px;
+}
+
+.three {
+  width: 428px;
+}
+
+.phone {
+  padding-top: 98px;
+  margin-left: auto;
+  margin-right: 150px;
+  padding-bottom: 98px;
+}
+
+.team {
+  margin-bottom: 103px;
+}
+.team .letter {
+  background: url(../img/team/letterT.png) no-repeat;
+}
+.team img {
+  position: relative;
+  z-index: 1;
+}
+.team h2 {
+  color: #222;
+  transform: translate(230%, -240%);
+}
+.team p {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  text-align: center;
+  padding-top: 84px;
+}
+
+.membersOfTheTeam {
+  padding-top: 69px;
+  text-align: center;
+}
+.membersOfTheTeam h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #11749E;
+  background-color: #fff;
+  text-align: center;
+  width: 220px;
+  padding: 22px 0;
+  margin-left: 134px;
+  transform: translate(-50%, -70%);
+  position: absolute;
+  z-index: 2;
+}
+.membersOfTheTeam p {
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  transform: translate(95%, 5%);
+  position: absolute;
+  z-index: 3;
+}
+
+.contact-area{
+  background: url(../img/fon7.jpg) no-repeat center top / cover;
+  padding-top: 138px;
+  padding-bottom: 100px;
+  
+}
+
+.contact-area .letter{
+  background: url(../img/letterC.png) no-repeat;
+  width: 120px;
+  height: 182px;
+}
+
+.contact-area .pageTitle{
+  font-family: 'Gotham';
+  color: #fff; 
+  transform: translate(14%, -390%);
+}
+.inputs{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap
+}
+input{
+  background-color: transparent;
+  padding: 18px;
+  width: 368px;
+  color: #fff;
+  font-family: 'Gotham'; 
+  font-size: 15px; 
+}
+
+textarea{
+  margin-top: 40px;
+  margin-bottom: 38px;
+  background-color: transparent;
+  color: #fff;
+  font-family: 'Gotham'; 
+  font-size: 15px;
+  padding: 18px;
+  width: 1180px;
+  height: 152px;
+  border: 2px solid #fff;
+}
+
+
+
+.buttom{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Gotham';
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 226px;
+  background: #11749e;
+  font-weight: 500;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 35px;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+
+}
+
+.buttom:hover {
+  background: #119ad4;
+}
+
+footer{
+  padding-top: 52px;
+  padding-bottom: 48px;
+  background: #222;
+
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+/*# sourceMappingURL=main.css.map */
